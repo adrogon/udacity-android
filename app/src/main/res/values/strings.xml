@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyAwesomeProject</string>
+
+    <string name="main_title">My nanodegree apps!</string>
+    <string name="action_settings">Settings</string>
+    <string name="spotifyAppName">Spotify streamer</string>
+    <string name="footAppName">Football scores</string>
+    <string name="libAppName">Library</string>
+    <string name="buildAppName">Build it bigger</string>
+    <string name="xyzAppName">XYZ Reader</string>
+    <string name="capstoneAppName">Capstone</string>
+</resources>
