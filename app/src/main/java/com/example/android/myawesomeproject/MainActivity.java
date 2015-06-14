@@ -39,55 +39,32 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void openSpotifyApp(View view) {
+    public void openApp(View view) {
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "Launch Spotify Streamer app";
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    public void openFootApp(View view) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "Launch Football scores app";
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    public void openLibApp(View view) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "Launch Library app";
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    public void openBuildApp(View view) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "Launch Build it bigger app";
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    public void openXyzApp(View view) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "Launch XYZ Reader app";
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    public void openCapstoneApp(View view) {
-        Context context = getApplicationContext();
-        int duration = Toast.LENGTH_SHORT;
-        CharSequence text = "Launch Capstone app";
+        CharSequence appName = "";
+        switch (view.getId()) {
+            case(R.id.spotifyAppButton):
+                appName = getResources().getText(R.string.spotifyAppName);
+                break;
+            case(R.id.footAppButton):
+                appName = getResources().getText(R.string.footAppName);
+                break;
+            case(R.id.libAppButton):
+                appName = getResources().getText(R.string.libAppName);
+                break;
+            case(R.id.buildAppButton):
+                appName = getResources().getText(R.string.buildAppName);
+                break;
+            case(R.id.xyzAppButton):
+                appName = getResources().getText(R.string.xyzAppName);
+                break;
+            case(R.id.capstoneAppButton):
+                appName = getResources().getText(R.string.capstoneAppName);
+                break;
+        }
+        String text = "Launch " + appName + " app";
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();

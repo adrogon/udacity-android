@@ -16,7 +16,7 @@
         android:text="@string/spotifyAppName"
         android:id="@+id/spotifyAppButton"
         android:layout_below="@+id/mainTitleText"
-        android:onClick="openSpotifyApp"
+        android:onClick="openApp"
         style="@style/Button.Green" />
 
     <Button
@@ -25,7 +25,7 @@
         android:text="@string/footAppName"
         android:id="@+id/footAppButton"
         android:layout_below="@+id/spotifyAppButton"
-        android:onClick="openFootApp"
+        android:onClick="openApp"
         style="@style/Button.Blue" />
 
     <Button
@@ -34,7 +34,7 @@
         android:text="@string/libAppName"
         android:id="@+id/libAppButton"
         android:layout_below="@+id/footAppButton"
-        android:onClick="openLibApp"
+        android:onClick="openApp"
         style="@style/Button.Blue" />
 
     <Button
@@ -43,7 +43,7 @@
         android:text="@string/buildAppName"
         android:id="@+id/buildAppButton"
         android:layout_below="@+id/libAppButton"
-        android:onClick="openBuildApp"
+        android:onClick="openApp"
         style="@style/Button.Orange" />
 
     <Button
@@ -52,7 +52,7 @@
         android:text="@string/xyzAppName"
         android:id="@+id/xyzAppButton"
         android:layout_below="@+id/buildAppButton"
-        android:onClick="openXyzApp"
+        android:onClick="openApp"
         style="@style/Button.Red" />
 
     <Button
@@ -61,7 +61,7 @@
         android:text="@string/capstoneAppName"
         android:id="@+id/capstoneAppButton"
         android:layout_below="@+id/xyzAppButton"
-        android:onClick="openCapstoneApp"
+        android:onClick="openApp"
         style="@style/Button.Black" />
 
 </RelativeLayout>
