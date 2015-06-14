@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyAwesomeProject</string>
+    <string name="app_name">Udacity Android</string>
 
     <string name="main_title">My nanodegree apps!</string>
     <string name="action_settings">Settings</string>
